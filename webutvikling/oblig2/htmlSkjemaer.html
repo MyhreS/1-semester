@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tittel</title>
+	<link rel="stylesheet" type="text/css" href="stilark.css">
+</head>
+<body>
+	<header>
+		<img src="bilder/bilde4.jpg" id="hovedsideBilde">
+		<h1 id="overskrift">Oppgave 3</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="indexWeb.html">Hjem</a></li>
+			<li><a href="htmlSkjemaer.html">HTML-skjemaer</a></li>
+			<li><a href="mediaTyper.html">Media typer</a></li>
+			<li><a href="cssLayouts.html">CSS layouts</a></li>			
+		</ul>
+	</nav>
+	<aside id="aside1"></aside>
+	<aside id="aside2"></aside>
+	<main>
+		<article>
+			<h2>HTML-Skjemaer</h2>
+			<p>
+				<img src="bilder/input.jpg" id="imgSkjema" >
+				HTML form er en av hovedmåtene en bruker kan samhandle med et nettsted eller et program. Brukeren får tilgang til å skrive inn data som nettstedet bruker. F.eks. til et skjema om dine sykdommer.
+			<br>
+			<br>
+				Form består ev en eller flere tags. Fields, select bokser, knapper, checkbokser eller radioknapper er noen eksempler. Disse går som attributter i en input tag. Ofte kan det være lurt å bruke en "label" om du har flere input tags som bildet til høyre.
+			<br>
+			<br>
+
+			<h4>Radioknapper</h4>
+				Radioknapper, input type= "radio", er som sagt en variant av input taggen. Her kan du få en eller flere valg som du kan "hukke av" eller "marker". Brukes når man bare ønsker at èn av de skal bli hukket av, ikke flere. 
+				<br>
+				<label>
+					JA!<input type="radio" name="test">
+					NEI!<input type="radio" name="test">
+				</label>
+				<br>
+
+			<h4>Checkboks</h4>
+				Checkboks, input type="checkbox", er enda en variant a input taggen. Her har du også en eller flere valg som du kan "hukke av". I motsetning til radiokanpper så kan du "hukke av" flere på en gang
+				<br>
+				<label>
+					Jeg liker: Is<input type="checkbox">
+					Ost<input type="checkbox">
+					Kake<input type="checkbox">
+				</label>
+				<br>
+
+			<h4>Submit</h4>
+				Submit, input type="submit", er også en variant a input taggen. Her lager du en knapp som tar verdiene fra de andre input feltene og sender det til en "form-handler". Hvem og hva denne form-handleren er blir spesifisert i form action="" feltet. 
+				<br>
+				<input type="submit">
+				<br>
+
+			<h4>Password</h4>
+				Password, input type="password", brukes for å skjule sensitiv informasjon i et input felt. Det kan være for eksempel passord eller annen personlig informasjon som man ikke ønsker at skal bli sett. Ved å gjøre det om til "password" så skjules denne informasjonen. Den tar imot både tekst, tall og tegn.
+				 <br>
+				<input type="password" value="teststestes">
+				<br>
+
+			<h4>File</h4>
+				File, input type="file", er for å kunne laste opp eller velge fil. For å kunne opplaste en fil må det stå "enctype="multipart/form-data"" i "form". Når man trykker på knapper får man mulighet til å velge hvilken fil man vil velge.
+				 <br>
+				 <input type="file">
+				<br>
+
+			<h4>Hidden</h4>
+				Hidden, input type="hidden", brukes for å ha en verdi som ikke brukeren kan endre på. Denne informasjonen kan f.eks. legge sammen med noe annet brukeren har skrevet inn. Det er derimot ikke anbefalt å bruke dette i forbindelse med sikkerhet. Et eksempel ligger under teksten. Men i og med at den er "hidden" så har du ikke mulighet til å verken se eller endre den. 
+				 <br>
+				 <input type="hidden">
+				<br>
+			
+			<h2>Nytt i HTML5:</h2>
+
+			<h4>Fieldset og legend</h4>
+				Ved bruk av "fieldset" grupperes et skjemafelt/et felt og lages en border rundt det. Når man da legger inn "legend" så brytes en del av denne borderen med den teksten man legger inn i "legend"
+				 <br>
+				<fieldset>
+					<legend>Overskrift</legend>
+					<input type="radio" name="julenisse"><br>
+					<input type="radio" name="julenisse"><br>
+					<input type="radio" name="julenisse"><br>
+					<input type="radio" name="julenisse"><br>
+				</fieldset>
+				<br>
+
+			<h4>Search</h4>
+				Hidden, input type="search", er en mer semantisk variant av "text". Det lar enheter og brukere lettere forstå at denne brukes for å søke. Veldig viktig å legge til en navn. Uten et navn vil ingenting bli sendt inn. 
+				 <br>
+				 Search:<input type="search" name="q">
+				<br>
+
+			<h4>Range</h4>
+				Range, input type="range", gir deg en slider som viser ulike verdier. Ved å bruke min og max så bestemmer du verdiene som kan velges. Step angir hvor lange stegene/hakkene er. 
+				 <br>
+				 <input type="range" min="0" max="10">
+				<br>
+
+			<h4>Number</h4>
+				Number, input type="number", lar deg kun skrive inn tall. Du får også to piler (opp og ned) på høyre side som kan brukes istedenfor tastaturet. Det er også mulig å bruke min, max og step akkurat som "range".
+				 <br>
+				 <input type="number" value="1">
+				<br>
+
+			<h4>Email</h4>
+				Email, input type="email", er som en "text" input. Denne derimot krever en epostadresse for å fungere. For å tillate flere email-adresser så må det legges til "multible" attributten.
+				 <br>
+				 <input type="email" value="oleNordmann@email.com">
+				<br>
+
+			<h4>Month</h4>
+				Month, input type="month", gir deg muligheten til å legge til måned og år. Nettlesere gir deg en kalenderløsning som gjør det veldig enkelt å velge. Altså år og måned, YYYY-MM. Ikke hvilken dag.
+				 <br>
+				 <input type="month">
+				<br>
+
+			<h4>Date</h4>
+				Date, input type="date", gir deg muligheten til å legge til dato. Som men "month" så får du enn enkel kalenderløsning gitt av nettleserene. Forskjellen er at denne inkluderer år, måned og dag. 
+				 <br>
+				 <input type="date">
+				<br>
+
+			<h4>Color</h4>
+				Color, input type="color", gjør at du kan legge til farger. Nettleseren tilbyr en veldig grei fargeleser. Denne kan bli brukt til mye forskjellig. F.eks. at at du kan velge bakgrunsfargen til en sirkel ved å hente verdien som har blitt angitt.
+				 <br>
+				 <input type="color">
+				<br>
+
+			<h4>Textarea</h4>
+				Texarea brukes om det skal fylles inn større menge tekst. F.eks. noen av eksamensprogrammene som du sikkert har brukt denne variantet. Denne kan også deles inn i rader/rows og colonner/cols.
+				 <br>
+				 <textarea></textarea>
+				<br>
+
+			<h4>Select</h4>
+				Select brukes med èn eller flere "option". Her får du en liste som inneholder èn eller flere valg. Kommer helt an på hvor mange "option" du har. Brukes ofte sammen med javascript arrays.
+				 <br>
+				 <select>
+				 	<option selected="selected">Start</option>
+				 	<option>Brann</option>
+				 	<option>Rosenborg</option>
+				 </select>
+				<br>
+
+			<h4>Datalist</h4>
+				Datalist brukes sammen med input taggen. "Datalist" kombinert med "option" gir flere valgmuligheter/eksempler til en input tagg. Dessverre er ikke denne støttet av Safari, Internett explorer 9 (og tidligere) og Opera mini. I tillegg krever det at du legger til "list" attributten til "input" taggenn. Og da gjør at id'en til "datalist" matcher denne.
+				 <br>
+				 <input type="text" list="fotball">
+				 <datalist id="fotball">
+				 	<option>Start</option>
+				 	<option>Brann</option>
+				 	<option>Rosenborg</option>
+				 </datalist>
+				<br>
+
+			<h4>Requiered, disabled og type attributtene</h4>
+				Dette er attributter som gjøre eller forteller noe om input feltet. "input requiered" krever at dette feltet må fylles ut. "input disabled" gjør at feltet er tilgjengelig. "input type=""" forteller oss hvilklen type denne inputten skal være.
+				 <br>
+				Requiered (text):<input type="text" required>
+				Disabled (text): <input type="text" disabled>
+				<br>
+
+			<h4>Tabindex</h4>
+				Gjør det mulig å navigere mellom ting ved å bruke tab. Dette er regnet som en veldig vrien måte å navigere på. En bedre struktur på nettsiden er regner som en mye bedre løsning. Man kan bruke det slik: HTMLElement.tabIndex = number.
+				<br>
+
+			<h4>ARIA</h4>
+				Er et sett med attributter som skal gjøre det enklere for folk med funksjonshemminger å samhandle med en aplikasjon. Disse attributtene kan bli lagt til og holdes oppdatert med javascript. En atributt er f.eks. role="progressbar"
+			</p>
+	</article>
+	<article>
+		<h3>Eksempel:</h3>
+			<form action="#" method="GET">
+				<fieldset>
+					<legend>Vennligst angi:</legend>
+					Navn <input type="text" name="Navn"><br>
+					Epost <input type="email" name="Epost"><br>
+					Mobilnummer <input type="tel" pattern="\d*" maxlength="8">
+					<br>
+					En lenger tekst:
+					<br>
+					<textarea></textarea>
+					<br>
+					<input type="submit">
+				</fieldset>
+				
+			</form>
+			<br>
+	</article>
+	</main>
+</body>
+</html>

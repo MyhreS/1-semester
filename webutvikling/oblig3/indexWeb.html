@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hovedside</title>
+	<link rel="stylesheet" type="text/css" href="indexRessurser/index.css">
+	<script src="indexRessurser/index.js"></script>
+</head>
+<body>
+	<aside>
+		<iframe id="bildeSidebar" width="290px" src="https://www.youtube.com/embed/UnTQVlqmDQ0" frameborder="0" allowfullscreen></iframe>
+		<details open>
+			<summary>Artikler om responsivt design</summary>
+			<a href="https://ieeexplore.ieee.org/abstract/document/6596440">Av: S. Mohorovičić</a><br>
+			<a href="http://www.webdesignblog.gr/wp-content/uploads/2012/03/5.pdf#page=15">Av: Brett S.Gardner</a><br>
+			<a href="https://link.springer.com/chapter/10.1007/978-1-4302-4525-4_4">Av: Jay Bryant og Mike Jones</a><br>
+			<a href="http://www.jgrcs.info/index.php/jgrcs/article/viewFile/949/607">Av: Nilesh Jain</a><br>
+			<a href="https://www.webfx.com/web-design/why-responsive-design-important.html">Av: Web FX </a>
+		</details>
+		<br>
+		<button onclick="window.location.href='https://www.google.com/search?q=html+skjema&oq=html+skjema&aqs=chrome.0.69i59.1583j0j8&sourceid=chrome&ie=UTF-8'">Søk på HTML-skjemaer</button>
+	</aside>
+
+	<header>
+		<img src="indexRessurser/bilde4.jpg" id="bilde">
+		<h1 id="overskrift">Min hjemmeside</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Hjem</a></li>
+			<li><a href="htmlSkjemaer.html">HTML-skjemaer</a></li>
+			<li><a href="mediaTyper.html">Media typer</a></li>
+			<li><a href="cssLayouts.html">CSS layouts</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<article class="artikler">
+			<h1>HTML-skjemaer</h1>
+			<p><img src="indexRessurser/htmlskjema.png" alt="bilde" class="artiklerBilde">
+				HTML form er en av hovedmåtene en bruker kan samhandle med et nettsted eller et program. Brukeren får tilgang til å skrive inn data som nettstedet kan bruke. F.eks. til et skjema om dine sykdommer.
+
+				Form består ev en eller flere tags. Fields, select bokser, knapper, checkbokser eller radioknapper er noen eksempler. Disse går som attributter i en input tag. Ofte kan det være lurt å bruke en "label" om du har flere input tags som bildet til høyre.
+				<br ><a href="htmlSkjemaer.html">Les mer</a>
+			</p>
+		</article>
+		<article class="artikler">
+			<h1>Media typer</h1>
+			<p><img src="indexRessurser/media.png" alt="bilde" class="artiklerBilde">
+				Media queries er en block med css egenskaper som starter å fungere når en viss egenskap er sann. Litt som en "if-setning" i javascript. Når f.eks. bredden på programmet er 800px eller mindre så blir bakgrunnsfargen rød. En media type kan se f.eks. ut som dette: @media only screen and (max-width: 600px). Alstå når screen/nettleseren er mindre enn 600 så skal det skje noe (som ikke er spesifisert.) "Only" brukes for å forhindre eldre nettlesere for å bruke det du har spesifisert. Du har også mulighet for å bruke "not" og "and". "Not" snur om/endrer meningen med media querien. "And" kompinerer en mediafunkson med en mediatype er mediafunksjon. Om du har brukt "not" eller "only" så må du også legge til en mediatype.
+				<br ><a href="mediaTyper.html">Les mer</a>
+			</p>
+		</article>
+		<article class="artikler">
+			<h1>Css Layouts</h1>
+			<p><img src="indexRessurser/gridFlex.JPG" alt="bilde" class="artiklerBilde">
+				Til dagens nettsiden er det nesten et krav om at det er responsivt samtidig mest mulig oversiktig. Dette er css grid og flexbox sin oppgave å oppnå. De er egentlig ganske like og oppnår mye av det samme. Men de er ikke like. Det som skiller dem er at flexbox er endimensjonal og grid er todimensjonal. Flexboks er veldig bra til å fylle ut resten av plassen man har i kontaineren. Måten en flexboks fungerer er veldig simpelt. Den legger element 1 ved siden av element 2 osv. Når den har brukt opp all plassen den har f.eks. horizontalt så plasserer flexbox det neste elementet under element 1. Grid er på sitt beste når det kreves at nettsiden skal bli utformet i sektorer med forskjellige størrelser, plasseringer og lag. Grid er et todimensjonalt verktøy i motsetning til flexbox. Men, grid er mer avansert.
+				<br ><a href="cssLayouts.html">Les mer</a>
+			</p>
+		</article>
+	</main>
+
+	<footer>
+		<ul>
+			<li>Simon Myhre</li>
+			<li>Simonmyhre1@gmail.com</li>
+			<li>Høgskolen i Østfold</li>
+		</ul>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task</title>
+    <script src="task.js"></script>
+    <style>
+        th, td {
+            border-right: 1px solid black;
+            padding-top: 7px;
+            padding-right: 5px;
+        }
+        .aPDF {
+            visibility: hidden;
+        }
+        #inputChoice, #btnPush {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    Select a file: <input type="file" onchange="readFile()" id="myInp" accept="csv">
+    <br>
+    <h3 id="hShowTask1"></h3>
+        <a href="Task1.pdf" target="_blank" class="aPDF" id="aPDF1">Task 1 PDF</a>
+    <h3 id="hShowTask2"></h3>
+        <p id="pTask2"></p>
+    <h3 id="hShowTask3"></h3>
+        <p id="pTask3"></p>
+    <h3 id="hShowTask4"></h3>
+        <p id="pTask4"></p>
+    <h3 id="hShowTask5"></h3>
+        <div id="out"></div>
+    <h3 id="hShowTask6"></h3>
+        <div id="out2"></div>
+    <h3 id="hShowTask7"></h3>
+        <a href="Task7.pdf" target="_blank" class="aPDF" id="aPDF2">Task 7 PDF</a>
+    <h3 id="hShowTask8"></h3>
+        <a href="Task8.pdf" target="_blank" class="aPDF" id="aPDF3">Task 8 PDF</a>
+    <h3 id="hShowTask9"></h3>
+        <input type="text" id="inputChoice">
+        <button id="btnPush">Search</button>
+        <p id="pTask9"></p>
+        
+    </body>
+</html>

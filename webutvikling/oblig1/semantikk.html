@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Oppgave 5</title>
+	<link rel="stylesheet" type="text/css" href="stilark.css">
+</head>
+<body>
+	<div id="mainDiv">
+		<header id="firstHeader">
+			<h1 id="mainH1">Oppgave 5</h1><br>
+			<button class="menyOppgaveBtn" onclick="window.location.href='index.html'">Hovedside</button>
+			<button class="menyOppgaveBtn" onclick="window.location.href='artikkel.html'">Oppgave 2</button>
+			<button class="menyOppgaveBtn" onclick="window.location.href='innhold-vs-design.html'">Oppgave 3</button>
+			<button class="menyOppgaveBtn" onclick="window.location.href='webserver.html'">Oppgave 4</button>
+			<button class="menyOppgaveBtn" onclick="window.location.href='semantikk.html'">Oppgave 5</button>
+			<button class="menyOppgaveBtn" onclick="window.location.href='box-modellen.html'">Oppgave 7</button>
+			<br>
+		</header>
+
+		<div  id="secondDiv">
+			<figcaption id="bildeFig">Bilde av: 
+			canvas presentasjon</figcaption>
+			<p class="oppgaveFerdigP">Oppgave ferdig: 10.09.2019</p>
+			<img class="bildeImg" src="bilder/sBilde.jpg" alt="Random bilde">
+			
+			<h2>Semantikk</h2>
+			<p>Noe av det første man lærer når man designer nettsider er å bruke bokser/div for å strukturere nettsiden. Det gjør det enkelt å plasere flere elementer på siden samtidig som koden blir mer systematisk. Man kan lage en "div" til f.eks overskrift og knapper, og en for innholdet. For oss som mennesker funker dette veldig fint. Men datamaskinen deler ikke vårt syn. Den trenger enda mer informasjon. Derfor er det semantiske tagger </p>
+
+			<p> Semantiske tagger gjør det enda enklere for oss å strukturere koden. Men det gjør det også mye enklere for datamaskinen. Ved å bruke semantiske tagger gir vi datamaskinen en idee på hva den inneholder. Den vet kanskje ikke hva innholdet er, men vet at det er f.eks. en overskrift. Ved å bruke en "header" så sier vi til datamaskinen at her vil jeg plassere min overskrift. Ved å bruke "article" så forteller vi at her står hovedinnholdet.</p>
+
+			<p>Bildet til høyre viser forskjellige semantiske tagger. Disse skal helst brukes over "div".</p>
+
+			<p>Søkemotorer drar nytte av semantiske tagger. Søkemotoren får nøkkelord den skal finne. For å finne relevant informasjon så vet den hvilken tagger som oftest gir best relavant informasjon, f.eks. header. Header har gjerne en overskrift. Og en overskrift beskriver innholdet. Ved å skrive f.eks "eple" inn i søkemotoren så leter søkemotoren etter en header med ordet "eple". Finner den det så viser den til denne siden. Veldig enkelt og mulig på grunn av semantiske tagger.</p>
+
+			<p>Å bruke "id" eller "class" på ulike tagger gir oss muligheten til å velge mellom hvilke vi ønsker å modifisere. Ved å bruke "id" eller "class" kan jeg lage to "p" til helt forskjellige ting. Den ene kan være blå mens den andre kan være grønn. Veldig greit å bruke til å designe nettsiden. Kan også brukes sammen med script. Så når jeg trykker på taggen med id="heiPåDeg" så blir siden blå. "Id" og "class" er veldig nytting til å identifisere forskjellige tagger. "Id" brukes best på ett objekt og i javascript. "Class" brukes best på flere objekter og i css. </p>
+			
+			<footer>
+				<h3>Footer</h3>
+				<p>Årstall: 2019</p>
+				<p>Navn: Simon Myhre</p>
+				<p>Mail: Simonmyhre1@gmail.com</p>
+			</footer>
+
+			
+			<br>
+		</div>
+	</div>
+</body>
+</html>

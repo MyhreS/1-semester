@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tittel</title>
+	<link rel="stylesheet" type="text/css" href="stilark.css">
+</head>
+<body>
+	<header>
+		<img src="bilder/bilde4.jpg" id="hovedsideBilde">
+		<h1 id="overskrift">Oppgave 5</h1>
+	</header>
+	<aside id="aside1"></aside>
+	<aside id="aside2"></aside>
+	<nav>
+		<ul>
+			<li><a href="indexWeb.html">Hjem</a></li>
+			<li><a href="htmlSkjemaer.html">HTML-skjemaer</a></li>
+			<li><a href="mediaTyper.html">Media typer</a></li>
+			<li><a href="cssLayouts.html">CSS layouts</a></li>			
+		</ul>
+	</nav>
+	<main>
+		<h1>CSS layouts</h1>
+		<p>
+			Til dagens nettsiden er det nesten et krav om at det er responsivt samtidig mest mulig oversiktig. Dette er css grid og flexbox sin oppgave å oppnå. De er egentlig ganske like og oppnår mye av det samme. Men de er ikke like. Det som skiller dem er at flexbox er endimensjonal og grid er todimensjonal. 
+			
+			<img src="bilder/gridFlex.jpg" id="imgGridFlex">
+			<h4>Flexbox</h4>
+			Flexboks er veldig bra til å fylle ut resten av plassen man har i kontaineren. Måten en flexboks fungerer er veldig simpelt. Den legger element 1 ved siden av element 2 osv. Når den har brukt opp all plassen den har f.eks. horizontalt så plasserer flexbox det neste elementet under element 1. Flexboks brukes da som sagt gjerne inni en kontainer for å bruke opp plassen, i tillegg til da at dere er responsivt. For å bruke flexboks trenger du bare å skrive "display: flex;" i kontaineren det skal brukes. Med blant annet "flex-flow" kan man bestemme hvilken vei flexboxen legger elementene. Ved å bruke "flex-flow: row;" så går den horisontalt. "flex-flow: column;" er horizontalt. Veldig enkelt og greit. Da skal helst ikke brukes til å forme hele nettsider. Til det har vi grid.
+			<img src="bilder/gridEksempel.JPG" id="gridEksempel1">
+			<img src="bilder/gridEksempelProg.JPG" id="gridEksempel2">
+			<h4>Grid</h4>
+			Grid er på sitt beste når det kreves at nettsiden skal bli utformet i sektorer med forskjellige størrelser, plasseringer og lag. Grid er et todimensjonalt verktøy i motsetning til flexbox. Men, grid er mer avansert. Grid kan bli brukt på flere måter. Å bruke "grid-template-areas" syns jeg er det enkleste. De to bildene som omgir teksten er et eksempel. Bildet til venstre er hvordan det vil se ut om du bruker koden som blir vist i bildet til høyre. Først må man ha de kontainerene man trenger. I dette tilfellet. Header, aside, main og footer. Så går man til sitt stilark. Så skriver man inn koden som blir vist i bildet. Grid-template-rows står for antall rader. Grid-template-columns for antall kolonner. I hver av disse spesifiserer man høyden/bredden. Grid-template-areas er hvordan det skal se ut. Hvis du sammenligner Grid-template-areas med nettsiden så ser du at header står øverst. Og footer står nederst. Etterpå trenger man bare å gi header, main osv det navnet man brukte i Grid-template-areas.
+
+			<h4>Grid vs flexbox</h4>
+			<ul>
+				<li>
+					Grid er todimensjonalt mens flexbox er endimensjonalt. Det gir grid flere funksjoner mens flex er enklere.
+				</li>
+				<li>
+					Flexbox fokuserer først på innhold mens grid på layout. Det gjør at flexbox oftest er best på å utforme innholdet mens grid fungerer best på layout.
+				</li>
+				<li>
+					Grid er ment for større layouts, mens flexbox for mindre (todimensjonalt v endimensjonalt).
+				</li>
+				<li>
+					Flexbox trenger du kun å tenke på en dimensjon, mens i grid må du tenke på to. 
+				</li>
+			</ul>
+			Ergo dette betyr at du kan bruke grid og flexbox sammen med hverandre. Eller grid i større skala og flexbox i mindre. 
+		</p>
+	</main>
+</body>
+</html>
